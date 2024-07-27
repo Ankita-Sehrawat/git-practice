@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Portfolio from './Components/Portfolio'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
-      <h1>Collabrative page</h1>
+     {/* <Portfolio/> */}
     </div>
   )
 }

@@ -1,16 +1,14 @@
-import { useState } from 'react';
 import './App.css';
 import MeetOurTeam from './Components/MeetOurTeam';
+import Header from './Components/Header'
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <h1>Collabrative page</h1>
+    <>
+      <Header />
       <MeetOurTeam />
-    </div>
+    </>
   );
 }
-
 export default App;
+

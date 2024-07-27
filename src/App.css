@@ -1,0 +1,19 @@
+.buttonHover {
+  position: relative;
+}
+.buttonHover::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff3344;
+  width: 100%;
+  bottom: -5px;
+  border-radius: 50px;
+  left: 0;
+  transform-origin: right;
+  transition: transform 300ms;
+  transform: scaleX(0);
+}
+.buttonHover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

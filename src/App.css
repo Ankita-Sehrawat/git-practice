@@ -17,3 +17,9 @@
   transform: scaleX(1);
   transform-origin: left;
 }
+
+@media (min-width: 1200px) {
+  .custom_container {
+    max-width: 1140px !important;
+  }
+}

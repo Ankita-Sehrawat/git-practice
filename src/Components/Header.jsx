@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="container mx-auto flex mt-5 items-center">
+        <div className="container custom_container mx-auto flex mt-5 items-center">
           <a className="font-black text-[32px] cursor-pointer">play_</a>
           <nav className="md:ml-auto  text-base justify-center hidden md:block">
             <a className="mr-[60px] text-xs font-medium cursor-pointer buttonHover">Home</a>
@@ -31,7 +31,7 @@ const Header = () => {
             src={positiondot}
             alt=""
           />
-          <div className="container mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
+          <div className="container custom_container mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
             <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="font-bold sm:text-4xl text-[70px]">
                 We design

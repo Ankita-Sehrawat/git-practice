@@ -11,7 +11,7 @@ const Features = () => {
               <p className="font-normal text-xl text-[#4857EC] tracking-[30%]">
                 FEATURES
               </p>
-              <h1 className="font-bold text-4xl md:text-5xl mt-6">What we are offering</h1>
+              <h1 className="font-bold text-3xl md:text-5xl mt-6">What we are offering</h1>
               <p className="mt-6 font-normal text-xl">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
                 eiusmod tempor.
@@ -26,8 +26,8 @@ const Features = () => {
                     }`}
                   >
                     <img src={item.image} alt="" />
-                    <h2 className="font-normal text-2xl mt-2.5">{item.name}</h2>
-                    <p className="font-normal text-[18px] text-[#98A1BB]">
+                    <h2 className="font-normal sm:text-2xl mt-2.5">{item.name}</h2>
+                    <p className="font-normal text-[16px] sm:text-[18px] text-[#98A1BB]">
                       {item.lorem}
                     </p>
                   </div>

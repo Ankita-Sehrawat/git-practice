@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import mainimg from "../assets/images/png/mainimage.png";
 import positiondot from "../assets/images/png/position dot.png";
 import riot from "../assets/images/png/riot-games-seeklogo.com 1.png";
@@ -6,30 +6,38 @@ import blizaard from "../assets/images/png/Blizzard.png";
 import zynga from "../assets/images/png/zynga (1) 1.png";
 import sega from "../assets/images/png/sega.png";
 import Activision from "../assets/images/png/Activision 1.png";
+import menu from "../assets/images/png/menu.png";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <header className="p-5 md:p-0">
-        <div className="container custom_container px-5 mx-auto flex mt-5 items-center">
-          <a className="font-black text-[32px] cursor-pointer">play_</a>
-          <nav className="md:ml-auto  text-base justify-center hidden md:block">
-            <a className="mr-[60px] text-sm  font-medium cursor-pointer buttonHover">
+        <div className="container custom_container px-5 mx-auto flex justify-between mt-5 items-center">
+          <a className="font-black text-[20px] sm:text-[32px] cursor-pointer">
+            play_
+          </a>
+          <nav className="hidden md:flex items-center">
+            <a className="mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Home
             </a>
-            <a className="mr-[60px] text-sm font-medium cursor-pointer buttonHover">
+            <a className="mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Services
             </a>
-            <a className="mr-[60px] text-sm font-medium cursor-pointer buttonHover">
+            <a className="mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Pricing
             </a>
-            <a className="mr-[60px] text-sm font-medium cursor-pointer buttonHover">
+            <a className="mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               About
             </a>
-            <button className="items-center font-bold hover:bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-black duration-200 border-[#4857EC] border hover:border">
+            <button className="items-center font-bold hover:bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-black duration-200 border-[#4857EC] border hover:border mt-5 md:mt-0">
               Contact us
             </button>
           </nav>
+          <div className="md:hidden">
+            <img className="h-6 w-6" src={menu} alt="" />
+          </div>
         </div>
 
         <section className="relative">
@@ -41,8 +49,7 @@ const Header = () => {
           <div className="container custom_container px-5 mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
             <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="font-bold text-[35px] md:text-[50px] lg:text-[70px] leading-[65px]">
-                We design for
-                {" "}
+                We design for{" "}
                 <span className="underline decoration-4 decoration-[#FF3344] ">
                   games
                 </span>
@@ -55,9 +62,9 @@ const Header = () => {
                 Get started
               </button>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="lg:max-w-lg md:w-1/2 w-5/6 sm:w-[65%]">
               <img
-                class="object-cover object-center rounded"
+                className="object-cover object-center rounded"
                 alt="hero"
                 src={mainimg}
               />
@@ -70,11 +77,11 @@ const Header = () => {
             We are trusted by hundreads of game companies
           </p>
           <div className="flex justify-center gap-20 mt-[23px] flex-wrap">
-            <img src={riot} alt="" />
-            <img src={blizaard} alt="" />
-            <img src={zynga} alt="" />
-            <img src={sega} alt="" />
-            <img src={Activision} alt="" />
+            <img src={riot} alt="Riot Games" />
+            <img src={blizaard} alt="Blizzard" />
+            <img src={zynga} alt="Zynga" />
+            <img src={sega} alt="Sega" />
+            <img src={Activision} alt="Activision" />
           </div>
         </div>
       </header>

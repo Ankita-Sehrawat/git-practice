@@ -7,3 +7,23 @@
 * {
   font-family: "Rubik", sans-serif;
 }
+
+.arrow_ylw_hover:hover svg {
+  fill: #F9C94E;
+}
+
+.arrow_ylw_hover:hover svg path {
+  stroke: white;
+}
+
+.animate_scale {
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: dots_scale 3s linear 1s infinite;
+  transition: 3s;
+}
+
+/* @keyframes dots_scale {
+  0% {
+    transform: scaleY(1.1);
+  }
+} */

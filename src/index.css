@@ -3,6 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .mobileView {
+    @apply max-lg:bg-[#00141b] z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300;
+  }
+}
 
 * {
   font-family: 'Rubik', sans-serif;
@@ -24,11 +29,15 @@
   animation: dots_scale 3s linear 1s infinite;
   transition: 3s;
 }
-.cursor_pointer{
+.cursor_pointer {
   cursor: pointer;
+}
+.justify_center {
+  justify-content: center;
 }
 /* @keyframes dots_scale {
   0% {
     transform: scaleY(1.1);
   }
 } */
+

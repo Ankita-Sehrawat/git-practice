@@ -4,7 +4,7 @@ import { features } from "./Common/Helper";
 const Features = () => {
   return (
     <>
-      <section className="container custom_container mx-auto p-2 md:p-0">
+      <section className="container custom_container mx-auto px-5">
         <div className="mt-[89px]">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-5/12">

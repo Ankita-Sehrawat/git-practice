@@ -1,5 +1,7 @@
 import './App.css';
 import MeetOurTeam from './Components/MeetOurTeam';
+import "./App.css";
+import Features from "./Components/Features";
 import Header from "./Components/Header";
 import Portfolio from "./Components/Portfolio";
 import "slick-carousel/slick/slick.css";
@@ -10,9 +12,11 @@ function App() {
     <>
       <Header />
       <MeetOurTeam />
-  
-      <Portfolio/>
-   </>
+
+      <Portfolio />
+
+      <Features />
+    </>
   );
 }
 export default App;

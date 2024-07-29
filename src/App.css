@@ -26,3 +26,18 @@
     padding-right: 12px;
   }
 }
+.slick-slide {
+  display: flex; /* Ensure slides are not stretching */
+  justify-content: center; /* Center content horizontally */
+}
+.slick-slide {
+  display: block; /* Make sure it's not set to flex or any vertical layout */
+}
+.slick-slide {
+  width: 100%; /* Ensure each slide takes full width of the container */
+}
+
+.slick-track {
+  display: flex; /* Ensure it's using flexbox layout correctly */
+  transform: translate3d(0px) !important;
+}

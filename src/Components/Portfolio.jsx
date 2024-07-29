@@ -1,7 +1,7 @@
 import React from 'react'
 import { Arrow_ylw, Blue_dot_icon, Green_dot_icon, Red_dot_icon, Ylw_dot_icon } from './Common/Icons'
 import { Portfolio_data } from './Common/Helper'
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 const Portfolio = () => {
     var settings = {

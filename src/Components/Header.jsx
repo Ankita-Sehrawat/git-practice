@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <header className="p-5 md:p-0">
-        <div className="container custom_container mx-auto flex mt-5 items-center">
+        <div className="container custom_container px-5 mx-auto flex mt-5 items-center">
           <a className="font-black text-[32px] cursor-pointer">play_</a>
           <nav className="md:ml-auto  text-base justify-center hidden md:block">
             <a className="mr-[60px] text-sm  font-medium cursor-pointer buttonHover">
@@ -38,11 +38,10 @@ const Header = () => {
             src={positiondot}
             alt=""
           />
-          <div className="container custom_container mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
+          <div className="container custom_container px-5 mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
             <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[70px] leading-[65px]">
+              <h1 className="font-bold text-[35px] md:text-[50px] lg:text-[70px] leading-[65px]">
                 We design for
-                {/* <br className="hidden lg:inline-block" /> */}
                 {" "}
                 <span className="underline decoration-4 decoration-[#FF3344] ">
                   games

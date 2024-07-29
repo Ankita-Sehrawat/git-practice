@@ -1,19 +1,33 @@
 import React from 'react';
 import footlogo from '../assets/images/png/play_ .png';
+import { Facebook_icon, Net_icon, Tweter_icon, Youtube_icon } from './Common/Icons';
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div className="bg-[#ffffff] md:pb-5 pb-8 pt-10 relative">
+    <div className="bg-[#ffffff] lg:pt-[145px] pt-[50px] pb-[50px] lg:pb-[88px] relative">
       <div className="xl:max-w-[1140px] mx-auto xl:px-3 container px-6">
-        <div className="flex flex-row flex-wrap -mx-3 md:pb-7">
-          <div className="xl:w-4/12 px-3 w-full pt-7">
+        <div className="flex flex-row flex-wrap  mb-[62px]">
+          <div className="xl:w-4/12 px-3 w-full">
             <img src={footlogo} alt="footlogo" className="cursor-pointer" />
             <p className="text-[#AAB2C8] text-[400] leading-[24px] text-[20px] lg:max-w-[369px] pt-6">
               Beneath the surface of every groundbreaking application lies a foundation built on
               countless lines of code, each meticulously crafted to achieve perfection.
             </p>
-            <div className="flex gap-3 pt-4"></div>
+            <div className="flex gap-5 mt-[32px] mb-[30px] lg:mb-[0px]">
+              <div className="social_hover cursor_pointer">
+                <Net_icon />
+              </div>
+              <div className="social_hover cursor_pointer">
+                <Facebook_icon />
+              </div>
+              {/* <div className="social_hover cursor_pointer">
+                <Tweter_icon />
+              </div> */}
+              <div className="social_hover cursor_pointer">
+                <Youtube_icon />
+              </div>
+            </div>
           </div>
           <div className="xl:w-8/12 px-3 md:pt-10 w-full">
             <div className="flex flex-row flex-wrap">
@@ -139,18 +153,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="xl:max-w-[1140px] mx-auto xl:px-3 container  px-6">
         <p className=" text-[#808080] text-[500] text-[18px] leading-[22px] pt-5">
           © {year} Game Analytics
         </p>
       </div>
-      {/* <div className="absolute left-[0%] bottom-0">
-        <img src={footelli1} alt="footelli1" />
-      </div>
-      <div className="absolute right-[0%] bottom-0">
-        <img src={footelli2} alt="footelli1" />
-      </div> */}
     </div>
   );
 };

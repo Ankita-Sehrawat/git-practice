@@ -3,17 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .mobileView {
+    @apply max-lg:bg-[#00141b] z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300;
+  }
+}
 
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .arrow_ylw_hover:hover svg {
-  fill: #F9C94E;
+  fill: #f9c94e;
 }
 
 .arrow_ylw_hover:hover svg path {
   stroke: white;
+}
+.social_hover:hover svg rect {
+  fill: #f9c94e;
 }
 
 
@@ -22,9 +30,15 @@
   animation: dots_scale 3s linear 1s infinite;
   transition: 3s;
 }
-
+.cursor_pointer {
+  cursor: pointer;
+}
+.justify_center {
+  justify-content: center;
+}
 /* @keyframes dots_scale {
   0% {
     transform: scaleY(1.1);
   }
 } */
+

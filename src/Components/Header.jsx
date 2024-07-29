@@ -1,16 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import mainimg from "../assets/images/png/mainimage.png";
 import positiondot from "../assets/images/png/position dot.png";
-import riot from "../assets/images/png/riot-games-seeklogo.com 1.png";
-import blizaard from "../assets/images/png/Blizzard.png";
-import zynga from "../assets/images/png/zynga (1) 1.png";
-import sega from "../assets/images/png/sega.png";
-import Activision from "../assets/images/png/Activision 1.png";
 import menu from "../assets/images/png/menu.png";
+import SimpleSlider from "./Slider";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <header className="p-5 md:p-0">
@@ -47,14 +41,14 @@ const Header = () => {
             alt=""
           />
           <div className="container custom_container px-5 mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
-            <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="font-bold text-[35px] md:text-[50px] lg:text-[70px] leading-[65px]">
+            <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-16 mb-[20px] items-center text-center">
+              <h1 className="font-bold text-[35px] md:text-[50px] lg:text-[70px] lg:leading-[65px]">
                 We design for{" "}
                 <span className="underline decoration-4 decoration-[#FF3344] ">
                   games
                 </span>
               </h1>
-              <p className="mb-8 font-normal text-lg max-w-[302px] mt-[26px]">
+              <p className="mb-6 md:mb-8 font-normal text-lg max-w-[302px] mt-[20px] md:mt-[26px]">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
@@ -76,12 +70,8 @@ const Header = () => {
           <p className="text-center font-normal text-2xl text-[#8A94A6]">
             We are trusted by hundreads of game companies
           </p>
-          <div className="flex justify-center gap-20 mt-[23px] flex-wrap">
-            <img src={riot} alt="Riot Games" />
-            <img src={blizaard} alt="Blizzard" />
-            <img src={zynga} alt="Zynga" />
-            <img src={sega} alt="Sega" />
-            <img src={Activision} alt="Activision" />
+          <div className="mt-[23px]">
+            <SimpleSlider />
           </div>
         </div>
       </header>

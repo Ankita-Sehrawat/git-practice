@@ -1,9 +1,8 @@
-
 .buttonHover {
   position: relative;
 }
 .buttonHover::after {
-  content: '';
+  content: "";
   position: absolute;
   border: 2px solid #ff3344;
   width: 100%;
@@ -14,9 +13,14 @@
   transition: transform 300ms;
   transform: scaleX(0);
 }
+
 .buttonHover:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.slick-next {
+  right: 0px !important;
 }
 
 @media (min-width: 1200px) {
@@ -24,12 +28,12 @@
     max-width: 1140px !important;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .navb {
     position: absolute;
     background: rgb(255, 255, 255);
     min-height: 100vh;
-    bottom: 0px;
+    bottom: 0px; 
     left: -100%;
     display: flex;
     flex-direction: column;

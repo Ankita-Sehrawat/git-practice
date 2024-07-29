@@ -3,7 +3,7 @@ import mainimg from "../assets/images/png/mainimage.png";
 import positiondot from "../assets/images/png/position dot.png";
 import menu from "../assets/images/png/menu.png";
 import SimpleSlider from "./Slider";
-import close from '../assets/images/png/close.png'
+import close from "../assets/images/png/close.png";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -37,9 +37,13 @@ const Header = () => {
               Contact us
             </button>
           </nav>
-          <div className="md:hidden z-50" onClick={shownav}>
+          <div className="xl:hidden z-50" onClick={shownav}>
             {/*  */}
-            {navbar ? (<img className="h-6 w-6 rotate-[45deg]" src={close} alt=""/>) : (<img className="h-6 w-6" src={menu} alt=""/>)}
+            {navbar ? (
+              <img className="h-6 w-6 rotate-[45deg]" src={close} alt="" />
+            ) : (
+              <img className="h-6 w-6" src={menu} alt="" />
+            )}
           </div>
         </div>
 

@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Portfolio />
       <MeetOurTeam />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

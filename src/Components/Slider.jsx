@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import riot from "../assets/images/png/riot-games-seeklogo.com 1.png";
 import blizzard from "../assets/images/png/Blizzard.png";
 import zynga from "../assets/images/png/zynga (1) 1.png";

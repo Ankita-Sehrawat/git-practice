@@ -17,12 +17,15 @@ const Features = () => {
             <div className="w-full md:w-6/12 mt-10 mt:md-0">
               <div className="grid grid-cols-2 gap-4">
                 {features.map((item, index) => (
-                  <div className={`${index === 2 || index === 3 ? 'mt-[30px] md:mt-[80px]' : ''}`}>
-                    <img src={item.image} alt="" />
-                    <h2 className="font-normal sm:text-2xl mt-2.5">{item.name}</h2>
-                    <p className="font-normal text-[16px] sm:text-[18px] text-[#98A1BB]">
-                      {item.lorem}
-                    </p>
+                  <div key={index}>
+                    <div
+                      className={`${index === 2 || index === 3 ? 'mt-[30px] md:mt-[80px]' : ''}`}>
+                      <img src={item.image} alt="" />
+                      <h2 className="font-normal sm:text-2xl mt-2.5">{item.name}</h2>
+                      <p className="font-normal text-[16px] sm:text-[18px] text-[#98A1BB]">
+                        {item.lorem}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>

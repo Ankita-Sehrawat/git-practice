@@ -19,32 +19,26 @@ const Header = () => {
             play_
           </a>
           <nav
-            className={`xl:flex items-center navb ${navbar ? "open" : "navb"}`}
+            className={`md:flex items-center navb ${navbar ? "open" : "navb"}`}
           >
-            <a className="lg:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Home
             </a>
-            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Services
             </a>
-            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Pricing
             </a>
-            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               About
             </a>
             <button className="items-center font-bold hover:bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-black duration-200 border-[#4857EC] border hover:border mt-5 md:mt-0">
               Contact us
             </button>
           </nav>
-          <div className="xl:hidden z-50" onClick={shownav}>
+          <div className="md:hidden z-50" onClick={shownav}>
             {navbar ? (<img className="h-6 w-6 rotate-[45deg]" src={close} alt=""/>) : (<img className="h-6 w-6" src={menu} alt=""/>)}
-            {/*  */}
-            {navbar ? (
-              <img className="h-6 w-6 rotate-[45deg]" src={close} alt="" />
-            ) : (
-              <img className="h-6 w-6" src={menu} alt="" />
-            )}
           </div>
         </div>
 
@@ -84,7 +78,7 @@ const Header = () => {
           <p className="text-center font-normal text-2xl text-[#8A94A6]">
             We are trusted by hundreads of game companies
           </p>
-          <div className="mt-[23px] pb-[84px] pt-[23px]">
+          <div className="mt-[23px] md:pb-[84px] pb-[30px] pt-[23px]">
             <div className="mt-[23px] container custom_container text-center mx-auto">
               <SimpleSlider />
             </div>

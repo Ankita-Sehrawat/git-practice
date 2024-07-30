@@ -3,11 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
-  .mobileView {
-    @apply max-lg:bg-[#00141b] z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300;
-  }
-}
 
 * {
   font-family: 'Rubik', sans-serif;
@@ -21,7 +16,10 @@
   stroke: white;
 }
 .social_hover:hover svg rect {
-  fill: #f9c94e;
+  fill: #B0B7C3;
+}
+.social_hover:hover svg path {
+  fill: #000000;
 }
 
 

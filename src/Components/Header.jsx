@@ -38,7 +38,6 @@ const Header = () => {
             </button>
           </nav>
           <div className="xl:hidden z-50" onClick={shownav}>
-            {/*  */}
             {navbar ? (<img className="h-6 w-6 rotate-[45deg]" src={close} alt=""/>) : (<img className="h-6 w-6" src={menu} alt=""/>)}
           </div>
         </div>

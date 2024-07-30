@@ -3,7 +3,7 @@
 }
 
 .buttonHover::after {
-  content: '';
+  content: "";
   position: absolute;
   border: 2px solid #ff3344;
   width: 100%;
@@ -20,6 +20,10 @@
   transform-origin: left;
 }
 
+.slick-next {
+  right: 0px !important;
+}
+
 @media (min-width: 1200px) {
   .custom_container {
     max-width: 1140px !important;
@@ -28,27 +32,23 @@
 
 .slick-slide {
   display: flex;
-  /* Ensure slides are not stretching */
   justify-content: center;
-  /* Center content horizontally */
   display: block;
-  /* Make sure it's not set to flex or any vertical layout */
   width: 100%;
-  /* Ensure each slide takes full width of the container */
 }
 
 .slick-track {
   display: flex;
-  /* Ensure it's using flexbox layout correctly */
   transform: translate3d(0px) !important;
 }
 
-@media (max-width: 1278px) {
+
+@media (max-width: 1280px) {
   .navb {
     position: absolute;
     background: rgb(255, 255, 255);
     min-height: 100vh;
-    bottom: 0px;
+    bottom: 0px; 
     left: -100%;
     display: flex;
     flex-direction: column;

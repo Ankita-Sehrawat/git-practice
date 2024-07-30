@@ -8,7 +8,7 @@ const Features = () => {
         <div className="mt-[89px] mb-[104px]">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-5/12">
-              <p className="font-normal text-xl text-[#4857EC] tracking-[30%]">FEATURES</p>
+              <p className="font-normal text-xl text-[#4857EC] tracking-[4px]">FEATURES</p>
               <h1 className="font-bold text-3xl md:text-5xl mt-6">What we are offering</h1>
               <p className="mt-6 font-normal text-xl">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor.

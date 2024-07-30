@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .mobileView {
-    @apply max-lg:bg-[#00141b] z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300;
-  }
-}
-
 * {
   font-family: 'Rubik', sans-serif;
 }
@@ -26,18 +20,9 @@
   fill: #f9c94e;
 }
 
-
 .animate_scale {
   animation: dots_scale 3s linear 1s infinite;
   transition: 3s;
-}
-
-.cursor_pointer {
-  cursor: pointer;
-}
-
-.justify_center {
-  justify-content: center;
 }
 
 @keyframes dots_scale {
@@ -55,16 +40,5 @@
 }
 
 .card_layer {
-  position: relative;
-}
-
-.card_layer::after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: -17%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #F5F6FA 0%, rgba(245, 246, 250, 0) 100%);
-  rotate: -90deg;
+  background: linear-gradient(270deg, #F5F6FA 30%, rgba(245, 246, 250, 0) 100%);
 }

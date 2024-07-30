@@ -12,7 +12,7 @@ const Portfolio = () => {
     };
 
     return (
-        <div className='container px-5 custom_container flex justify-center flex-col items-center m-auto py-16 lg:pt-[124px] lg:pb-[75px] relative'>
+        <div className='container px-5 custom_container flex justify-center flex-col items-center m-auto py-16 lg:pt-[124px] lg:pb-[75px] relative md:mt-[100px] mt-[40px]'>
             <div className='animate_scale hidden lg:block '>
                 <div className='absolute top-[10%] left-[30%] '>
                     <Red_dot_icon />

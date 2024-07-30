@@ -24,7 +24,7 @@ const Testimonial = () => {
                 },
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 1.6,
                     slidesToScroll: 1,
@@ -46,7 +46,7 @@ const Testimonial = () => {
             <div className='container px-5 custom_container m-auto pt-[65px]'>
                 <p className='text-xl text-[#4857EC] font-medium uppercase text-center sm:text-start tracking-[4px] '>Testimonial</p>
                 <div className='flex flex-col sm:flex-row justify-center sm:justify-between items-center mt-3 lg:mt-6'>
-                    <h1 className='text-[30px] sm:text-[36px] lg:text-[48px] text-black font-bold text-center sm:text-start'>What are they saying?</h1>
+                    <h1 className='text-[30px] sm:text-[36px] lg:text-[48px] text-black font-bold text-center sm:text-start leading-7 '>What are they saying?</h1>
                     <div className='flex gap-4 mt-5 sm:mt-0'>
                         <span className='cursor-pointer' onClick={() => sliderRef.current.slickPrev()}><Test_left_arrow /></span>
                         <span className='cursor-pointer' onClick={() => sliderRef.current.slickNext()}><Test_right_arrow /></span>

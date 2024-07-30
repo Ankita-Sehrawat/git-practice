@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <header className="p-5 md:p-0">
-        <div className="container custom_container px-5 mx-auto flex justify-between mt-5 items-center">
+        <div className="container custom_container md:px-5 mx-auto flex justify-between  md:mt-5 items-center">
           <a className="font-black text-[20px] sm:text-[32px] cursor-pointer">
             play_
           </a>
@@ -53,9 +53,9 @@ const Header = () => {
             src={positiondot}
             alt=""
           />
-          <div className="container custom_container px-5 mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
+          <div className="container custom_container px-5 mx-auto flex md:py-[42px] py-[30px] md:flex-row flex-col-reverse items-center justify-between">
             <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="font-bold text-[35px] md:text-[50px] lg:text-[70px] leading-[65px]">
+              <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[70px] md:leading-[65px] leading-tight">
                 We design for{" "}
                 <span className="underline decoration-4 decoration-[#FF3344] ">
                   games
@@ -80,7 +80,7 @@ const Header = () => {
         </section>
 
         <div>
-          <p className="text-center font-normal text-2xl text-[#8A94A6]">
+          <p className="text-center font-normal text-xl text-[#8A94A6]">
             We are trusted by hundreads of game companies
           </p>
           <div className="mt-[23px] container custom_container text-center mx-auto">

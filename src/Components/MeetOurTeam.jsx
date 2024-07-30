@@ -14,7 +14,7 @@ const MeetOurTeam = () => {
     <>
       <div className=" bg-[#f5f6fb] lg:pb-[107px]  pb-[50px] pt-[24px]">
         <div className="xl:max-w-[1140px] mx-auto xl:px-3 container px-6">
-          <h4 className="text-[#4857EC] font-normal text-xl leading-6 text-center sm:text-start">
+          <h4 className="text-[#4857EC] font-normal text-xl leading-6 text-center lg:text-start  tracking-[4px]">
             TEAM
           </h4>
           <h1 className=" text-black font-bold text-5xl leading-[45px] mt-[24px] text-center sm:text-start">
@@ -22,9 +22,15 @@ const MeetOurTeam = () => {
           </h1>
           <div className="flex flex-wrap flex-row -mx-3 justify-center">
             {cards.map((cards, i) => (
-              <div key={i} className="lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center">
+              <div key={i} className=" w-8/12 sm:w-6/12 md:w-4/12  px-3 flex justify-center">
                 <div className=" text-center mt-[47px]">
-                  <img className=' cursor-pointer' src={cards.img} alt="girl" />
+                  <div className=" overflow-hidden">
+                    <img
+                      className="max-[400px]:w-full max-sm:w-8/12  max-sm:m-auto transition-[10s] hover:scale-125 "
+                      src={cards.img}
+                      alt="girl"
+                    />
+                  </div>
                   <h2 className="mt-[23px] font-[600] text-[24px] text-black cursor-pointer leading-[45px]">
                     {cards.name}
                   </h2>
@@ -39,7 +45,7 @@ const MeetOurTeam = () => {
             <h2 className="mt-[4px] text-[#4857EC] me-[15px] text-[18px] font-[700] cursor-pointer leading-[21.33px]">
               View all
             </h2>
-            <img className=' cursor-pointer' src={arrow} alt="arrow" />
+            <img className=" cursor-pointer" src={arrow} alt="arrow" />
           </div>
         </div>
       </div>

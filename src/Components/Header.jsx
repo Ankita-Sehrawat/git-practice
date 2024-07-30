@@ -3,7 +3,7 @@ import mainimg from "../assets/images/png/mainimage.png";
 import positiondot from "../assets/images/png/position dot.png";
 import menu from "../assets/images/png/menu.png";
 import SimpleSlider from "./Slider";
-import close from '../assets/images/png/close.png'
+import close from "../assets/images/png/close.png";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -39,12 +39,18 @@ const Header = () => {
           </nav>
           <div className="xl:hidden z-50" onClick={shownav}>
             {navbar ? (<img className="h-6 w-6 rotate-[45deg]" src={close} alt=""/>) : (<img className="h-6 w-6" src={menu} alt=""/>)}
+            {/*  */}
+            {navbar ? (
+              <img className="h-6 w-6 rotate-[45deg]" src={close} alt="" />
+            ) : (
+              <img className="h-6 w-6" src={menu} alt="" />
+            )}
           </div>
         </div>
 
-        <section className="relative">
+        <section className="relative container custom_container mx-auto">
           <img
-            className="absolute right-0 hidden lg:block top-[102px]"
+            className="absolute right-0 hidden lg:block top-[102px] "
             src={positiondot}
             alt=""
           />
@@ -79,7 +85,9 @@ const Header = () => {
             We are trusted by hundreads of game companies
           </p>
           <div className="mt-[23px] pb-[84px] pt-[23px]">
-            <SimpleSlider />
+            <div className="mt-[23px] container custom_container text-center mx-auto">
+              <SimpleSlider />
+            </div>
           </div>
         </div>
       </header>

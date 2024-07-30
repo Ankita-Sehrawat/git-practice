@@ -29,9 +29,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="xl:w-8/12 px-3 md:pt-10 w-full ">
+          <div className="xl:w-8/12 px-3 md:pt-10 lg:pt-[0px] w-full ">
             <div className="flex flex-row flex-wrap">
-              <div className="md:w-3/12 w-1/2 flex lg:justi fy-end">
+              <div className="md:w-3/12 w-1/2 flex justify-center lg:justify-start">
                 <ul>
                   <li className="text-[#000000] font-bold text-[24px] leading-[29px] mb-[27px] ">
                     Home
@@ -66,7 +66,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="md:w-3/12 w-1/2 flex lg:justi fy-end">
+              <div className="md:w-3/12 w-1/2 flex justify-center lg:justify-start">
                 <ul>
                   <li className="text-[#000000] font-bold text-[24px] leading-[29px] mb-[27px] ">
                     Pages
@@ -101,7 +101,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="md:w-3/12 w-1/2 flex lg:justi fy-end">
+              <div className="md:w-3/12 w-1/2 flex justify-center lg:justify-start">
                 <ul>
                   <li className="text-[#000000] font-bold text-[24px] leading-[29px] mb-[27px] ">
                     Blog
@@ -129,7 +129,7 @@ const Footer = () => {
                   </li>{' '}
                 </ul>
               </div>
-              <div className="md:w-3/12 w-1/2 flex lg:justi fy-end">
+              <div className="md:w-3/12 w-1/2 flex justify-center lg:justify-start">
                 <ul>
                   <li className="text-[#000000] font-bold text-[24px] leading-[29px] mb-[27px] ">
                     Portfolio

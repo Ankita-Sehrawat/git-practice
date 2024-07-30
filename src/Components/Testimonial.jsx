@@ -57,7 +57,7 @@ const Testimonial = () => {
                         <Slider {...sliderSettings} ref={sliderRef}>
                             {Test_data.map((item, i) => (
                                 <div key={i} className='px-4 '>
-                                    <div className="w-full sm:max-w-[460px] bg-white rounded-[10px] border-[3px] border-[#4857EC] p-[15px_10px] lg:p-[30px_26px_32px_26px] ">
+                                    <div className="w-full sm:max-w-[460px] bg-white rounded-[10px] p-[15px_10px] lg:p-[30px_26px_32px_26px] card_layer">
                                         <div className='flex flex-col sm:flex-row sm:items-center justify-between'>
                                             <div className='flex gap-3 sm:gap-5'>
                                                 <div>{item.icon} </div>

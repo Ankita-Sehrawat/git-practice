@@ -1,12 +1,13 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import riot from "../assets/images/png/riot-games-seeklogo.com 1.png";
-import blizzard from "../assets/images/png/Blizzard.png";
-import zynga from "../assets/images/png/zynga (1) 1.png";
-import sega from "../assets/images/png/sega.png";
-import activision from "../assets/images/png/Activision 1.png";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import riot from '../assets/images/png/riot-games-seeklogo.com 1.png';
+import blizzard from '../assets/images/png/Blizzard.png';
+import zynga from '../assets/images/png/zynga (1) 1.png';
+import sega from '../assets/images/png/sega.png';
+import activision from '../assets/images/png/Activision 1.png';
 
 export default function SimpleSlider() {
   const settings = {
@@ -33,7 +34,7 @@ export default function SimpleSlider() {
         },
       },
       {
-        breakpoint: 480, 
+        breakpoint: 480,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -43,22 +44,24 @@ export default function SimpleSlider() {
   };
 
   return (
-    <Slider {...settings}>
-      <div className="max-w-[150px] text-center">
-        <img src={riot} alt="Riot Games" />
-      </div>
-      <div className="max-w-[150px]">
-        <img src={blizzard} alt="Blizzard" />
-      </div>
-      <div className="max-w-[150px]">
-        <img src={zynga} alt="Zynga" />
-      </div>
-      <div className="max-w-[150px]">
-        <img src={sega} alt="Sega" />
-      </div>
-      <div className="max-w-[150px]">
-        <img src={activision} alt="Activision" />
-      </div>
-    </Slider>
+    <div>
+      <Slider {...settings}>
+        <div className="max-w-[150px] text-center">
+          <img src={riot} alt="Riot Games" />
+        </div>
+        <div className="max-w-[150px]">
+          <img src={blizzard} alt="Blizzard" />
+        </div>
+        <div className="max-w-[150px]">
+          <img src={zynga} alt="Zynga" />
+        </div>
+        <div className="max-w-[150px]">
+          <img src={sega} alt="Sega" />
+        </div>
+        <div className="max-w-[150px]">
+          <img src={activision} alt="Activision" />
+        </div>
+      </Slider>
+    </div>
   );
 }

@@ -39,7 +39,7 @@
   display: flex; /* Ensure it's using flexbox layout correctly */
   transform: translate3d(0px) !important;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1278px) {
   .navb {
     position: absolute;
     background: rgb(255, 255, 255);

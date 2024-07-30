@@ -1,42 +1,39 @@
-import React, { useState } from "react";
-import mainimg from "../assets/images/png/mainimage.png";
-import positiondot from "../assets/images/png/position dot.png";
-import menu from "../assets/images/png/menu.png";
-import SimpleSlider from "./Slider";
+import React, { useState } from 'react';
+import mainimg from '../assets/images/png/mainimage.png';
+import positiondot from '../assets/images/png/position dot.png';
+import menu from '../assets/images/png/menu.png';
+import SimpleSlider from './Slider';
 
 const Header = () => {
-   const [navbar, setNavbar] = useState(false);
-   function shownav() {
-     setNavbar(!navbar);
-   }
-   console.log(navbar);
-
+  const [navbar, setNavbar] = useState(false);
+  function shownav() {
+    setNavbar(!navbar);
+  }
+  console.log(navbar);
 
   return (
     <>
       <header className="p-5 md:p-0">
         <div className="container custom_container px-5 mx-auto flex justify-between mt-5 items-center">
           <a className="font-black text-[20px] sm:text-[32px] cursor-pointer">play_</a>
-          <nav
-            // className="hidden md:flex items-center"
-            className={` xl:flex items-center navb ${navbar ? 'open' : 'navb'}`}>
-            <a className="lg:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+          <nav className={` xl:flex items-center navb ${navbar ? 'open' : 'navb'}`}>
+            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Home
             </a>
-            <a className="lg:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Services
             </a>
-            <a className="lg:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               Pricing
             </a>
-            <a className="lg:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="xl:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               About
             </a>
             <button className="items-center font-bold hover:bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-black duration-200 border-[#4857EC] border hover:border mt-5 md:mt-0">
               Contact us
             </button>
           </nav>
-          <div className="md:hidden z-50" onClick={shownav}>
+          <div className="xl:hidden z-50" onClick={shownav}>
             <img className="h-6 w-6" src={menu} alt="" />
           </div>
         </div>
@@ -46,14 +43,12 @@ const Header = () => {
           <div className="container custom_container px-5 mx-auto flex py-[42px] md:flex-row flex-col-reverse items-center">
             <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-16 mb-[20px] items-center text-center">
               <h1 className="font-bold text-[35px] md:text-[50px] lg:text-[70px] lg:leading-[65px]">
-                We design for{" "}
-                <span className="underline decoration-4 decoration-[#FF3344] ">
-                  games
-                </span>
+                We design for{' '}
+                <span className="underline decoration-4 decoration-[#FF3344] ">games</span>
               </h1>
               <p className="mb-6 md:mb-8 font-normal text-lg max-w-[302px] mt-[20px] md:mt-[26px]">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
               </p>
               <button className="items-center font-bold hover:bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-black duration-200 border-[#4857EC] border hover:border">
                 Get started

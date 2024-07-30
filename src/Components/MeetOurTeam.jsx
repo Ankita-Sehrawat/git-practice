@@ -24,8 +24,8 @@ const MeetOurTeam = () => {
             {cards.map((cards, i) => (
               <div key={i} className="lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center">
                 <div className=" text-center mt-[47px]">
-                  <img src={cards.img} alt="girl" />
-                  <h2 className="mt-[23px] font-[600] text-[24px] text-black  leading-[45px]">
+                  <img className=' cursor-pointer' src={cards.img} alt="girl" />
+                  <h2 className="mt-[23px] font-[600] text-[24px] text-black cursor-pointer leading-[45px]">
                     {cards.name}
                   </h2>
                   <h1 className="mt-[4px] text-[#98A1BB] text-[18px] font-[400]  leading-[45px]">
@@ -36,10 +36,10 @@ const MeetOurTeam = () => {
             ))}
           </div>
           <div className=" flex justify-center items-baseline mt-[40px]  lg:mt-[66px]">
-            <h2 className="mt-[4px] text-[#4857EC] me-[15px] text-[18px] font-[700]  leading-[21.33px]">
+            <h2 className="mt-[4px] text-[#4857EC] me-[15px] text-[18px] font-[700] cursor-pointer leading-[21.33px]">
               View all
             </h2>
-            <img src={arrow} alt="arrow" />
+            <img className=' cursor-pointer' src={arrow} alt="arrow" />
           </div>
         </div>
       </div>

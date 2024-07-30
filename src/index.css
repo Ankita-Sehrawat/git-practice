@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   .mobileView {
     @apply max-lg:bg-[#00141b] z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300;
@@ -20,25 +21,43 @@
 .arrow_ylw_hover:hover svg path {
   stroke: white;
 }
+
 .social_hover:hover svg rect {
   fill: #f9c94e;
 }
 
 
 .animate_scale {
-  animation: name duration timing-function delay iteration-count direction fill-mode;
   animation: dots_scale 3s linear 1s infinite;
   transition: 3s;
 }
+
 .cursor_pointer {
   cursor: pointer;
 }
+
 .justify_center {
   justify-content: center;
 }
-/* @keyframes dots_scale {
-  0% {
-    transform: scaleY(1.1);
-  }
-} */
 
+@keyframes dots_scale {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+.slide-item {
+  width: 300px; /* Adjust the width as needed */
+}

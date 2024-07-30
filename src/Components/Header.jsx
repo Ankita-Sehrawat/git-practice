@@ -47,9 +47,9 @@ const Header = () => {
           </div>
         </div>
 
-        <section className="relative">
+        <section className="relative container custom_container mx-auto">
           <img
-            className="absolute right-0 hidden lg:block top-[102px]"
+            className="absolute right-0 hidden lg:block top-[102px] "
             src={positiondot}
             alt=""
           />
@@ -84,7 +84,9 @@ const Header = () => {
             We are trusted by hundreads of game companies
           </p>
           <div className="mt-[23px] pb-[84px] pt-[23px]">
-            <SimpleSlider />
+            <div className="mt-[23px] container custom_container text-center mx-auto">
+              <SimpleSlider />
+            </div>
           </div>
         </div>
       </header>

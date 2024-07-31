@@ -153,7 +153,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className=" text-[#808080] text-[500] text-[18px] leading-[22px] pt-5  text-center sm:text-start">
+        <p className=" text-[#808080] text-[500] text-[18px] leading-[22px]  text-center sm:text-start">
           © {year} Game Analytics
         </p>
       </div>

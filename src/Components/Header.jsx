@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <header className="p-5 md:p-0">
         <div className="container custom_container px-5 mx-auto flex justify-between mt-5 items-center">
-          <a className="font-black text-[20px] sm:text-[32px] cursor-pointer">
+          <a className="font-black text-[20px] sm:text-[32px] cursor-pointer z-50">
             play_
           </a>
           <nav

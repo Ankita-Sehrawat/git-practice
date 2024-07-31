@@ -45,24 +45,22 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div>
-      <Slider {...settings}>
-        <div className="max-w-[150px] text-center">
-          <img src={riot} alt="Riot Games" />
-        </div>
-        <div className="max-w-[150px]">
-          <img src={blizzard} alt="Blizzard" />
-        </div>
-        <div className="max-w-[150px]">
-          <img src={zynga} alt="Zynga" />
-        </div>
-        <div className="max-w-[150px]">
-          <img src={sega} alt="Sega" />
-        </div>
-        <div className="max-w-[150px]">
-          <img src={activision} alt="Activision" />
-        </div>
-      </Slider>
-    </div>
-  );
+    <Slider {...settings}>
+      <div className="max-w-[100px] text-center">
+        <img src={riot} alt="Riot Games" />
+      </div>
+      <div className="max-w-[100px]">
+        <img src={blizzard} alt="Blizzard" />
+      </div>
+      <div className="max-w-[100px]">
+        <img src={zynga} alt="Zynga" />
+      </div>
+      <div className="max-w-[100px]">
+        <img src={sega} alt="Sega" />
+      </div>
+      <div className="max-w-[100px]">
+        <img src={activision} alt="Activision" />
+      </div>
+    </Slider>
+     );
 }

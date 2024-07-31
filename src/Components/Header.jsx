@@ -33,7 +33,7 @@ const Header = () => {
             <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
               About
             </a>
-            <button className="items-center font-bold hover:bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-black duration-200 border-[#4857EC] border hover:border mt-5 md:mt-0">
+            <button className="items-center font-bold bg-[#4857EC] py-[13px] px-[25px] rounded text-base text-white duration-200  mt-5 md:mt-0 border border-[#4857EC]  hover:bg-white hover:text-[#4857EC]  ">
               Contact us
             </button>
           </nav>
@@ -60,7 +60,7 @@ const Header = () => {
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
-              <button className="items-center font-bold bg-[#4857EC] hover:text-white py-[13px] px-[25px] rounded text-base text-white duration-200 border-[#4857EC] ">
+              <button className="items-center font-bold bg-[#4857EC] py-[13px] px-[25px] rounded text-base text-white duration-200 border border-[#4857EC]  hover:bg-white hover:text-[#4857EC] ">
                 Get started
               </button>
             </div>

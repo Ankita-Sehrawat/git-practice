@@ -28,7 +28,7 @@ const Portfolio = () => {
                             <div key={i} className='max-[470px]:w-full max-[470px]:px-0 w-8/12 sm:w-6/12 md:w-4/12 h-full my-4 lg:my-0 xl:px-5 px-3 cursor-pointer '>
                                 <div className='overflow-hidden rounded-3xl'>
                                     <img className='max-[400px]:w-full max-sm:w-8/12  max-sm:m-auto transition-[10s] hover:scale-125 ' src={item.img} alt="img" />
-                                    </div>
+                                </div>
                                 <div className='flex justify-between mt-3 sm:mt-6'>
                                     <div className='w-11/12'>
                                         <p className='text-base md:text-xl xl:text-2xl font-medium text-black'> {item.title} </p>
@@ -43,7 +43,7 @@ const Portfolio = () => {
                     })}
                 </div>
                 <div className='text-center'>
-                    <button className='text-white font-bold text-sm sm:text-base p-[13px_15px] bg-[#4857EC] rounded-[3px] '>View portfolio</button>
+                    <button className='text-white font-bold text-sm sm:text-base p-[13px_15px] bg-[#4857EC] rounded-[3px] border border-[#4857EC]  hover:bg-white hover:text-[#4857EC] '>View portfolio</button>
                 </div>
             </div>
         </div>

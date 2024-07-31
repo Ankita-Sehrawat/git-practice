@@ -13,7 +13,7 @@ export default function SimpleSlider() {
   const settings = {
     dots: false,
     infinite: true,
-    arrow: false,
+    arrows: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -45,22 +45,43 @@ export default function SimpleSlider() {
   };
 
   return (
-    <Slider {...settings}>
-      <div className="max-w-[100px] text-center">
-        <img src={riot} alt="Riot Games" />
+    <>
+      {/* //{" "}
+      <Slider {...settings}> */}
+      {/* <div className="max-w-[100px] text-center">
+      
+    </div>
+    <div className="max-w-[100px]">
+    </div>
+    <div className="max-w-[100px]">
+    </div>
+    <div className="max-w-[100px]">
+    </div>
+    <div className="max-w-[100px]">
+    </div> */}
+      {/* //{" "}
+      </Slider> */}
+      <div className=" overflow-auto">
+        <div className="w-[1000px] flex justify-between">
+          <img
+            className="max-w-[100px] text-center"
+            src={riot}
+            alt="Riot Games"
+          />
+          <img
+            className="max-w-[100px] text-center"
+            src={blizzard}
+            alt="Blizzard"
+          />
+          <img className="max-w-[100px] text-center" src={zynga} alt="Zynga" />
+          <img
+            className="max-w-[100px] text-center"
+            src={activision}
+            alt="Activision"
+          />
+          <img className="max-w-[100px] text-center" src={sega} alt="Sega" />
+        </div>
       </div>
-      <div className="max-w-[100px]">
-        <img src={blizzard} alt="Blizzard" />
-      </div>
-      <div className="max-w-[100px]">
-        <img src={zynga} alt="Zynga" />
-      </div>
-      <div className="max-w-[100px]">
-        <img src={sega} alt="Sega" />
-      </div>
-      <div className="max-w-[100px]">
-        <img src={activision} alt="Activision" />
-      </div>
-    </Slider>
+    </>
   );
 }

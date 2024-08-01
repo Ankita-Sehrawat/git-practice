@@ -15,18 +15,18 @@ const Footer = () => {
               countless lines of code, each meticulously crafted to achieve perfection.
             </p>
             <div className="flex gap-5 mt-[32px] mb-[30px] lg:mb-[0px]">
-              <div className="social_hover cursor-pointer ">
+              <span className="social_hover cursor-pointer ">
                 <Net_icon />
-              </div>
-              <div className="social_hover cursor-pointer ">
+              </span>
+              <span className="social_hover cursor-pointer ">
                 <Facebook_icon />
-              </div>
-              <div className="social_hover cursor-pointer ">
+              </span>
+              <span className="social_hover cursor-pointer ">
                 <Tweeter_icon />
-              </div>
-              <div className="social_hover cursor-pointer ">
+              </span>
+              <span className="social_hover cursor-pointer ">
                 <Youtube_icon />
-              </div>
+              </span>
             </div>
           </div>
           <div className="xl:w-8/12 px-3 md:pt-10 xl:pt-[0px] w-full ">

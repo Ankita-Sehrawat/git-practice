@@ -14,21 +14,19 @@ const Footer = () => {
               Beneath the surface of every groundbreaking application lies a foundation built on
               countless lines of code, each meticulously crafted to achieve perfection.
             </p>
-            <div className="flex gap-5 w-full justify-center lg:justify-start  my-4 sm:my-[10px] lg:mb-[0px] lg:mt-8">
-              <div className="social_hover cursor-pointer ">
+            <div className="flex gap-5 mt-[32px] mb-[30px] lg:mb-[0px]">
+              <span className="social_hover cursor-pointer ">
                 <Net_icon />
-              </div>
-              <div className="social_hover cursor-pointer ">
-                <a href="https://facebook.com/">
-                  <Facebook_icon />
-                </a>
-              </div>
-              <div className="social_hover cursor-pointer ">
+              </span>
+              <span className="social_hover cursor-pointer ">
+                <Facebook_icon />
+              </span>
+              <span className="social_hover cursor-pointer ">
                 <Tweeter_icon />
-              </div>
-              <div className="social_hover cursor-pointer ">
+              </span>
+              <span className="social_hover cursor-pointer ">
                 <Youtube_icon />
-              </div>
+              </span>
             </div>
           </div>
           <div className="w-full lg:w-8/12 px-3 pt-7 lg:pt-[0px] ">

@@ -5,22 +5,22 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div className="bg-[#ffffff] lg:pt-[145px] pt-[50px] pb-[50px] lg:pb-[88px] relative">
+    <div className="bg-[#ffffff] xl:pt-[145px] md:pt-24 pt-[50px] pb-[50px] lg:pb-[88px] relative">
       <div className="xl:max-w-[1140px] mx-auto xl:px-3 container px-6">
         <div className="flex flex-row flex-wrap  mb-[62px]">
           <div className=" w-full lg:w-4/12 px-3 flex flex-col justify-center sm:justify-start items-center sm:items-start  ">
-            <img src={footlogo} alt="footlogo" className="cursor-pointer" />
+            <img src={footlogo} alt="footlogo" className="cursor-pointer m-auto lg:m-0" />
             <p className="text-[#AAB2C8] font-[400] leading-[24px] text-[16px] lg:text-[20px] lg:max-w-[369px] pt-6 text-center lg:text-start">
               Beneath the surface of every groundbreaking application lies a foundation built on
               countless lines of code, each meticulously crafted to achieve perfection.
             </p>
-            <div className="flex gap-5 w-full justify-center  my-4 sm:my-[10px] lg:mb-[0px] lg:mt-8">
+            <div className="flex gap-5 w-full justify-center lg:justify-start  my-4 sm:my-[10px] lg:mb-[0px] lg:mt-8">
               <div className="social_hover cursor-pointer ">
                 <Net_icon />
               </div>
               <div className="social_hover cursor-pointer ">
                 <a href="https://facebook.com/">
-                <Facebook_icon />
+                  <Facebook_icon />
                 </a>
               </div>
               <div className="social_hover cursor-pointer ">

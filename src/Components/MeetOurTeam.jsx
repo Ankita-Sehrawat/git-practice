@@ -14,10 +14,10 @@ const MeetOurTeam = () => {
     <>
       <div className=" bg-[#f5f6fb] lg:pb-[107px]  pb-[50px] pt-[24px]">
         <div className="xl:max-w-[1140px] mx-auto xl:px-3 container px-6">
-          <h4 className="text-xl text-[#4857EC] font-medium mb-2 lg:mb-6 text-center sm:text-start uppercase tracking-[4px]">
+          <h4 className="text-xl text-[#4857EC] font-medium mb-2 lg:mb-6 text-center md:text-start uppercase tracking-[4px]">
             TEAM
           </h4>
-          <h1 className="text-[30px] sm:text-[36px] lg:text-[48px] text-black font-bold text-center sm:text-start">
+          <h1 className="text-[30px] sm:text-[36px] lg:text-[48px] text-black font-bold text-center md:text-start">
             Meet our team
           </h1>
           <div className="flex flex-wrap flex-row -mx-3 justify-center">

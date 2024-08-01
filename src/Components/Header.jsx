@@ -38,7 +38,7 @@ const Header = () => {
             </button>
           </nav>
           <div className="md:hidden z-50" onClick={shownav}>
-            {navbar ? (<img className="h-6 w-6 rotate-[45deg]" src={close} alt=""/>) : (<img className="h-6 w-6" src={menu} alt=""/>)}
+            {navbar ? (<img className="h-6 w-6 rotate-[45deg]" src={close} alt="img"/>) : (<img className="h-6 w-6" src={menu} alt="img"/>)}
           </div>
         </div>
 
@@ -49,14 +49,14 @@ const Header = () => {
             alt=""
           />
           <div className="container custom_container px-5 mx-auto flex md:py-[42px] py-[30px] md:flex-row flex-col-reverse items-center justify-between">
-            <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[70px] md:leading-[65px] leading-tight">
+            <div className="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-[20px] md:mb-0 items-center text-center">
+              <h1 className="font-bold text-[30px] sm:text-[45px] lg:text-[70px]  leading-8 lg:leading-[65px]">
                 We design for{" "}
                 <span className="underline decoration-4 decoration-[#FF3344] ">
                   games
                 </span>
               </h1>
-              <p className="mb-8 font-normal text-lg md:max-w-[302px] mt-[26px]">
+              <p className="mb-4 md:mb-8 font-normal text-lg md:max-w-[302px] mt-3 md:mt-6">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>

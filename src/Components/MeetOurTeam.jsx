@@ -26,7 +26,7 @@ const MeetOurTeam = () => {
                 key={i}
                 className=" max-[470px]:w-full max-[470px]:px-0 w-8/12 sm:w-6/12 md:w-4/12  lg:my-4 xl:px-5 px-3 cursor-pointer ">
                 <div className=" text-center mt-[47px]">
-                  <div className=" overflow-hidden">
+                  <div className=" overflow-hidden rounded-3xl ">
                     <img
                       className="max-[400px]:w-full max-sm:w-8/12  max-sm:m-auto transition-[10s] hover:scale-125 "
                       src={cards.img}

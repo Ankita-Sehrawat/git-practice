@@ -16,16 +16,24 @@ const Footer = () => {
             </p>
             <div className="flex gap-5 mt-[32px] mb-[30px] lg:mb-[0px]">
               <span className="social_hover cursor-pointer ">
-                <Net_icon />
+                <a target='_blank' href="https://www.google.com">
+                  <Net_icon />
+                </a>
               </span>
               <span className="social_hover cursor-pointer ">
-                <Facebook_icon />
+                <a target='_blank' href="https://www.facebook.com/">
+                  <Facebook_icon />
+                </a>
               </span>
               <span className="social_hover cursor-pointer ">
-                <Tweeter_icon />
+                <a target='_blank' href="https://www.twitter.com">
+                  <Tweeter_icon />
+                </a>
               </span>
               <span className="social_hover cursor-pointer ">
-                <Youtube_icon />
+                <a target='_blank' href="https://www.youtube.com">
+                  <Youtube_icon />
+                </a>
               </span>
             </div>
           </div>

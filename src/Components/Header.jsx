@@ -11,6 +11,10 @@ const Header = () => {
     setNavbar(!navbar);
   }
 
+  function closeNav(){
+    setNavbar(false);
+  }
+
   return (
     <div className="bg-[#f5f7fc]">
       <header className="p-5 md:p-0">
@@ -21,16 +25,16 @@ const Header = () => {
           <nav
             className={`md:flex items-center navb ${navbar ? "open" : "navb"}`}
           >
-            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0" onClick={closeNav}>
               Home
             </a>
-            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0" onClick={closeNav}>
               Services
             </a>
-            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0" onClick={closeNav}>
               Pricing
             </a>
-            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0">
+            <a className="md:mr-[50px] text-sm font-medium cursor-pointer buttonHover mt-5 md:mt-0" onClick={closeNav}>
               About
             </a>
             <button className="items-center font-bold bg-[#4857EC] py-[13px] px-[25px] rounded text-base text-white duration-200  mt-5 md:mt-0 border border-[#4857EC]  hover:bg-white hover:text-[#4857EC]  ">
